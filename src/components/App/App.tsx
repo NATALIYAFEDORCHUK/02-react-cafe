@@ -4,7 +4,7 @@ import css from "./App.module.css";
 import CafeInfo from "../CafeInfo/CafeInfo";
 import VoteOptions from "../VoteOptions/VoteOptions";
 import type { Votes, VoteType } from "../../types/votes";
-import VoteStatus from "../VoteStatus/VoteStatus";
+import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
 
 export default function App() {
@@ -42,7 +42,7 @@ export default function App() {
         canReset={totalVotes > 0}
       />
       {totalVotes > 0 ? (
-        <VoteStatus
+        <VoteStats
           votes={votes}
           totalVotes={totalVotes}
           positiveRate={positiveRate}
